@@ -64,3 +64,13 @@
             
         })
 //   form submition ends--------------------
+
+// -------------contact------------
+
+        function goForContact(service){
+           
+            sub=document.getElementById('subject')
+            sub.value=service;
+        }
+
+// -------------contact ends------------
