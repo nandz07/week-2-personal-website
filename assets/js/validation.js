@@ -1,3 +1,4 @@
+// validation
 $(document).ready(function(){
     $("#submit-form").validate({
         rules:{
@@ -39,3 +40,25 @@ $(document).ready(function(){
         }
     })
 })
+// ----------validation ends---------
+
+// form submition---------------
+
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzkstZ2uLfAspYe_MiWpGChHuzyss-T1xYL0EjrjymqVBQeE4l3Io4HhznElNnK61JXOA/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+//   form submition ends--------------------

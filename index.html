@@ -28,6 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -412,31 +413,27 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="" method="post"  class="php-email-form" id="submit-form">
+            <form action="" 
+              class="" id="submit-form">
               <div class="row">
                 <div class="form-group col-md-6 submit-form" >
-                  <label for="name">Your Name</label>
+                  <label for="name" class="text-secondary mb-2 mt-2">Your Name</label>
                   <input type="text" name="name" class="form-control" id="name">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
+                  <label for="name" class="text-secondary mb-2 mt-2">Your Email</label>
                   <input type="email" class="form-control" name="email" id="email" >
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
+                <label for="name" class="text-secondary mb-2 mt-2">Subject</label>
                 <input type="text" class="form-control" name="subject" id="subject" >
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
+                <label for="name" class="text-secondary mb-2 mt-2">Message</label>
                 <textarea class="form-control" name="message" rows="10" ></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" class="btn btn-primary mt-4">Send Message</button></div>
             </form>
           </div>
 
